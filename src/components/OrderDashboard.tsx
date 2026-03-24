@@ -166,7 +166,7 @@ export const OrderDashboard = () => {
         <div className="flex items-center gap-6">
           <div className="bg-white p-2 rounded-2xl shadow-xl shadow-slate-100 border border-slate-100 h-20 w-40 flex items-center justify-center">
             <img 
-              src="/api/attachments/a-1" 
+              src="./logo.png" 
               alt="Nazária Logo" 
               className="h-full w-auto object-contain"
               referrerPolicy="no-referrer"
@@ -269,7 +269,7 @@ export const OrderDashboard = () => {
       <footer className="mt-16 pt-10 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 text-[9px] font-black uppercase tracking-[0.3em]">
         <div className="flex items-center gap-4">
           <div className="w-12 h-8 bg-white rounded-lg flex items-center justify-center border border-slate-100 p-1">
-            <img src="/api/attachments/a-1" alt="N" className="h-full w-auto object-contain" referrerPolicy="no-referrer" />
+            <img src="./logo.png" alt="N" className="h-full w-auto object-contain" referrerPolicy="no-referrer" />
           </div>
           <p>© 2026 Nazária Distribuidora Farmacêutica - Expedição</p>
         </div>

@@ -49,7 +49,7 @@ export const Sidebar = () => {
           <div className="mb-10 flex flex-col items-center gap-2">
             <div className="flex h-16 w-full items-center justify-center rounded-xl bg-white p-2">
               <img 
-                src="/api/attachments/a-1" 
+                src="./logo.png" 
                 alt="Nazária Logo" 
                 className="h-full w-auto object-contain"
                 referrerPolicy="no-referrer"
