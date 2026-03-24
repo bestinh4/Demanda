@@ -1,0 +1,68 @@
+{
+  "entities": {
+    "ExpeditionStatus": {
+      "title": "ExpeditionStatus",
+      "description": "Summary of expedition status",
+      "type": "object",
+      "properties": {
+        "statusName": { "type": "string" },
+        "units": { "type": "integer" },
+        "orders": { "type": "integer" },
+        "color": { "type": "string" },
+        "order": { "type": "integer" }
+      },
+      "required": ["statusName", "units", "orders"]
+    },
+    "ExpeditionRegion": {
+      "title": "ExpeditionRegion",
+      "description": "Region data for a specific status",
+      "type": "object",
+      "properties": {
+        "statusName": { "type": "string" },
+        "regionName": { "type": "string" },
+        "value": { "type": "integer" }
+      },
+      "required": ["statusName", "regionName", "value"]
+    },
+    "ExpeditionBilling": {
+      "title": "ExpeditionBilling",
+      "description": "Billing data",
+      "type": "object",
+      "properties": {
+        "date": { "type": "string" },
+        "units": { "type": "integer" },
+        "amount": { "type": "number" }
+      },
+      "required": ["date", "units", "amount"]
+    },
+    "ExpeditionClientType": {
+      "title": "ExpeditionClientType",
+      "description": "Client type percentage",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "value": { "type": "integer" },
+        "color": { "type": "string" }
+      },
+      "required": ["name", "value"]
+    }
+  },
+  "firestore": {
+    "/expedition_status/{id}": {
+      "schema": "ExpeditionStatus",
+      "description": "Collection of expedition statuses"
+    },
+    "/expedition_regions/{id}": {
+      "schema": "ExpeditionRegion",
+      "description": "Collection of region data"
+    },
+    "/expedition_billing/{id}": {
+      "schema": "ExpeditionBilling",
+      "description": "Collection of billing data"
+    },
+    "/expedition_client_types/{id}": {
+      "schema": "ExpeditionClientType",
+      "description": "Collection of client types"
+    }
+  }
+}

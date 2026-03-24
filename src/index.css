@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nazaria-orange: #FF7900;
+  --color-nazaria-blue: #000040;
+  --color-primary: var(--color-nazaria-orange);
+  --color-secondary: var(--color-nazaria-blue);
+}
